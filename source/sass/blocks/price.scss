@@ -51,7 +51,9 @@
 }
 
 .tabcontent__item-picture {
+  margin: 0 auto;
 	margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Style the tab */
@@ -110,7 +112,7 @@
 
 /* Style the tab content */
 .tabcontent {
-	display: none;
+	display: flex;
 	padding: 16px 30px;
 	border-top: none;
 }
@@ -139,12 +141,12 @@
 	margin-bottom: 20px;
 	padding-left: 25px;
 	color: #000000;
-	@include font-size(16px,18px);
+	@include font-size(18px,20px);
 	&::before {
 		@include before-elem();
 		width: 13px;
 		height: 13px;
-		top: 2px;
+		top: 4px;
 		background-color: $submit-btn-bg;
 		border-radius: 50%;
 		border: 2px solid #000000;
@@ -183,4 +185,19 @@
 		@include padding-left-right(15%, 15%);
 	}
 
+}
+
+@media ($tablet-widths) {
+.tabcontent__content-container {
+  display: flex;
+  justify-content:space-around;
+}
+
+.tabcontent__item {
+  padding-bottom: 10px;
+}
+
+.tabcontent__item-picture {
+  margin-right: 5%;
+}
 }

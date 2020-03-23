@@ -56,3 +56,22 @@ $(function () {
         });
     });
 });
+
+$(function () {
+    $('#calcCarpet').submit(function (e) {
+        e.preventDefault(); //это чтобы форма не отправлялась через браузер, только по AJAX
+        var formdata = 'material=' + ($(".calculator__choose-material-item input").filter(':checked').val()) + '&square=' + $('#totalSquare').text() + '&add1=' + $("#add1").filter(':checked').val() + '&add2=' + $("#add2").filter(':checked').val() + '&add3=' + $("#add3").filter(':checked').val() + '&add4=' + $("#add4").filter(':checked').val() + '&add5=' + $("#add5").filter(':checked').val() + '&price=' + $('#calcPrice').text() + '&tel=' + $('#calcTel').val();
+        //запишем все данные формы в переменную data
+        $.ajax({
+            url: 'calcForm.php',
+            data: formdata,
+            type: 'post',
+            success: function (respond) {
+                $(".modal-background").css('display', 'block') && $(".success-message").css('display', 'block') && $("#introName").val("") && $("#intro-form-tel").val("");
+            },
+            error: function () {
+                alert('Произошла ошибка. Повторите попытку позже.');
+            }
+        });
+    });
+});

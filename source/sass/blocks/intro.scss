@@ -30,7 +30,7 @@
 }
 
 .intro__slide-2 {
-    background-image: url("../img/slider-3-mobile.jpg");
+    background-image: url("../img/slider-1-mobile.jpg");
 }
 
 .intro__slide-3 {
@@ -70,7 +70,7 @@
     @include padding-left-right();
     padding-top: 3%;
     @include font-size (16px, 18px);
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     color: #ffffff;
     text-shadow: 1px 1px 3px #000000;
@@ -109,12 +109,7 @@
 
     .intro__slide-2 {
         height: 400px;
-        background-image: url("../img/slider-3-tablet.jpg");
-    }
-
-    .intro__slide-3 {
-        height: 400px;
-        background-image: url("../img/slider-2-tablet.jpg");
+        background-image: url("../img/slider-1-tablet.jpg");
     }
 
     .owl-dots {
@@ -137,7 +132,7 @@
 .intro__btn {
 	width: 250px;
 	margin: 0 auto;
-	margin-bottom: 100px; 
+	margin-bottom: 100px;
 	@include font-size(22px, 24px);
 }
 }

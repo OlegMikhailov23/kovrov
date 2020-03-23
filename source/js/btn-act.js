@@ -22,11 +22,11 @@ $('.success-content-close').mouseup(function () {
 
 //Всплывающее модальное окно по таймеру
 
-var modalEmergence = function () {
-    $(".modal-content").css('display', 'block') && $(".success-message").css('display', 'block') && $(".modal-background").css('display', 'block') && $('.name').focus() && $('#modal-header').text("Получите консультацию бесплатно!");
-}
+// var modalEmergence = function () {
+//     $(".modal-content").css('display', 'block') && $(".success-message").css('display', 'block') && $(".modal-background").css('display', 'block') && $('.name').focus() && $('#modal-header').text("Получите консультацию бесплатно!");
+// }
 
-setTimeout(modalEmergence, 18000);
+// setTimeout(modalEmergence, 40000);
 
 //Всплывающее модальное окно по таймеру
 

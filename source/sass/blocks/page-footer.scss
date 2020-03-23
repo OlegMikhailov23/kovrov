@@ -16,7 +16,7 @@
 	& .page-footer__footer-logo-link {
 		display: block;
 		@include size (170px, 55px);
-		background: url("../img/logo-footer.png") no-repeat;
+		background: url("../img/main-logo-footer.png") no-repeat;
 		font-size: 0;
 		background-size: 100%;
 	}
@@ -163,14 +163,14 @@
 
 .page-footer__develop a {
 	display: inline-block;
-	vertical-align: text-bottom;
-	width: 30px;
-	height: 35px;
-	font-size: 0;
-	background-image: url("../img/develop.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	//vertical-align: text-bottom;
+	//width: 30px;
+	//height: 35px;
+	//font-size: 0;
+	//background-image: url("../img/develop.png");
+	//background-position: center;
+	//background-repeat: no-repeat;
+	//background-size: 100% 100%;
 }
 
 .page-footer__develop span {
